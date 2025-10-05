@@ -1,0 +1,58 @@
+{
+  "scan_metadata": {
+    "project_dir": "/tmp/generated-projects/network-scanner-20251005",
+    "scan_time": "2025-10-05T09:00:01.630356",
+    "scanner_version": "1.0.0",
+    "total_files_scanned": 3,
+    "scan_duration_seconds": 0.003762
+  },
+  "summary": {
+    "critical_count": 0,
+    "high_count": 0,
+    "medium_count": 3,
+    "low_count": 0,
+    "total_findings": 3
+  },
+  "findings": {
+    "critical_findings": [],
+    "high_findings": [],
+    "medium_findings": [
+      {
+        "severity": "MEDIUM",
+        "file": "/tmp/generated-projects/network-scanner-20251005/requirements.txt",
+        "line": 0,
+        "description": "SCAN ERROR: Could not read file: unknown extension ?\\\\ at position 6",
+        "pattern": "scan_error",
+        "match": "unknown extension ?\\\\ at position 6",
+        "category": "scan_error"
+      },
+      {
+        "severity": "MEDIUM",
+        "file": "/tmp/generated-projects/network-scanner-20251005/main.py",
+        "line": 0,
+        "description": "SCAN ERROR: Could not read file: unknown extension ?\\\\ at position 6",
+        "pattern": "scan_error",
+        "match": "unknown extension ?\\\\ at position 6",
+        "category": "scan_error"
+      },
+      {
+        "severity": "MEDIUM",
+        "file": "/tmp/generated-projects/network-scanner-20251005/README.md",
+        "line": 0,
+        "description": "SCAN ERROR: Could not read file: unknown extension ?\\\\ at position 6",
+        "pattern": "scan_error",
+        "match": "unknown extension ?\\\\ at position 6",
+        "category": "scan_error"
+      }
+    ],
+    "low_findings": [],
+    "info_findings": [],
+    "scan_metadata": {
+      "project_dir": "/tmp/generated-projects/network-scanner-20251005",
+      "scan_time": "2025-10-05T09:00:01.630356",
+      "scanner_version": "1.0.0",
+      "total_files_scanned": 3,
+      "scan_duration_seconds": 0.003762
+    }
+  }
+}
