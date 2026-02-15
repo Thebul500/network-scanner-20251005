@@ -179,11 +179,10 @@ jobs:
           # Create new issue
           issue_data = {"title": title, "body": body, "labels": ["security"]}
           new_issue = api_request(f"{api}/issues", issue_data, "POST")
-          if new_issue:
-              print(f"Created issue #{new_issue.get('number')}: {title}")
+          if new_issue and "number" in new_issue:
+              print(f"Created issue #{new_issue['number']}: {title}")
           else:
-              print("Failed to create issue")
-              sys.exit(1)
+              print("Could not create issue (issues may be disabled). Findings logged in artifacts.")
 
   semgrep-autofix:
     name: Semgrep Autofix
